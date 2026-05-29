@@ -25,6 +25,18 @@ Instala a config do Claude Code em `~/.claude/`.
 
 ---
 
+## Estilo de scripts
+
+Todos os scripts bash deste repo devem ter comentários inline suficientes para que alguém sem experiência em bash consiga ler e entender o que está acontecendo. Isso significa:
+
+- **Comentar cada bloco lógico** dentro do script explicando o que faz e por quê
+- **Explicar flags e opções não óbvias** — ex: `set -e` (para se qualquer comando falhar), `2>/dev/null` (descarta mensagens de erro), `chmod +x` (dá permissão de execução)
+- **Explicar variáveis** na linha em que são definidas ou logo acima
+- **Explicar pipes e substituições** — ex: `$(...)`, `|`, redirecionamentos
+- Comentários em português são preferidos
+
+---
+
 ## Segurança
 
 - **Nunca commitar `.env`** nem arquivos com credenciais, tokens, API keys ou senhas.
